@@ -7,6 +7,7 @@ import './index.scss'
 
 import Logo from './Logo'
 import LogoTitle from '../../assets/images/logo-s.png'
+import Sidebar from '../Sidebar'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -37,6 +38,7 @@ const Home = () => {
 
   return (
     <>
+      <Sidebar />
       <div className="container home-page">
         <div className="text-zone">
           <h1>
