@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
-import logo from './logo.svg'
+import Home from './components/Home'
 import Layout from './components/Layout'
 
 import './App.scss'
@@ -10,6 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />} />
+        <Route index element={<Home />} />
       </Routes>
     </>
   )
